@@ -1,0 +1,6 @@
+{
+    "venvPath": "/usr/local/Caskroom/miniconda/base/envs",
+    "venv": "rag_env",
+    "pythonVersion": "3.11",
+    "typeCheckingMode": "basic"
+}

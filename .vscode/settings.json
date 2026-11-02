@@ -1,0 +1,5 @@
+{
+    "python.defaultInterpreterPath": "/usr/local/Caskroom/miniconda/base/envs/rag_env/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.envFile": "${workspaceFolder}/.env"
+}

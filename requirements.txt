@@ -3,7 +3,11 @@ uvicorn[standard]>=0.29
 pydantic>=2.6
 pydantic-settings>=2.2
 qdrant-client>=1.8
-sentence-transformers>=2.5
-transformers>=4.38
-torch>=2.1
-peft>=0.18
+# torch 2.2.2 is the last release with macOS x86_64 (Intel) wheels, and it is built against NumPy 1.x
+torch>=2.1,<2.3
+numpy<2
+# transformers 5.x calls torch>=2.4 APIs at runtime; 4.55.4 is the last 4.x release
+transformers==4.55.4
+# sentence-transformers 6.x requires transformers>=5
+sentence-transformers==5.7.0
+peft==0.21.2
